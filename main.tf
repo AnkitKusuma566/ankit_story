@@ -1,8 +1,6 @@
 
-
-
 variable "ankitline" {
-    default =  "in banaglore."
+    default =  "in banaglore. I lied that "
 }
 
 module "mikelines" {
