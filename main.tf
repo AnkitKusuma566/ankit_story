@@ -2,7 +2,7 @@
 
 
 variable "ankitline" {
-    default =  "${module.mikelines.this_is_the_stuff} in banaglore."
+    default =  "${mikelines.this_is_the_stuff} in banaglore."
 }
 
 module "mikelines" {
