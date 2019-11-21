@@ -2,13 +2,13 @@
 
 
 variable "ankitline" {
-    default =  "${mikelines.this_is_the_stuff} in banaglore."
+    default =  "in banaglore."
 }
 
 module "mikelines" {
-    source = "https://github.com/mhristof/operculiform-karbi/raw/master/main.tf"
+    source = "git@github.com:mhristof/operculiform-karbi.git"
 }
 
 output "story" {
-    value = var.ankitline
+    value = "${module.mikelines.this_is_the_stuff} ${var.ankitline}"  
 }
